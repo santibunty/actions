@@ -12,7 +12,7 @@ jobs:
 
             - name: Welcome message
               run: |
-                echo "My First Github action job"
+                echo "My First Github actions job"
                 ls -lrt
                 cat README.md
             - name: GENERATE ASCCI code
