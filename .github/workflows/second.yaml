@@ -6,6 +6,11 @@ jobs:
     first_job: 
         runs-on: ubuntu-latest
         steps: 
-            - uses: actions/checkout@v5
+            - name: checkout repo
+              uses: actions/checkout@v5
+            - name: list repo
+              run: ls -ltra
             - name: Executing shell script
-              run: ./ascii.sh
+              run: |
+                chmod +x ascii.sh
+                ./ascii.sh
